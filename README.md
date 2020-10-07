@@ -36,7 +36,8 @@ Some files are included with this assignment for your benefit. You are not requi
 
 1. **input/names*.txt** This is a set of sample name files. They follow the same format as mentioned earlier. Use them to test your program.
 2. **results-ref.txt** This result file is a sample output of the IPs for the hostnames from all the **names*.txt** files used as input.
-3. **lookup.go** This program represents an un-threaded solution to this assignment. Feel free to use it as a starting point for your program, or as a reference for using the utility functions and performing file i/o in Go.
+3. **lookup** This program represents an un-threaded solution to this assignment. Feel free to use it as a starting point for your program, or as a reference for using the utility functions and performing file i/o in Rust.
+4. **multi-lookup** Initial cargo project for multi-lookup. Your code should go here. You will tar.gz this entire project for submission. 
 
 
 ## Additional Specifications
@@ -45,9 +46,9 @@ Many of the specifications for your program are embedded in the descriptions abo
 ### Program Arguments
 Your executable program should be named "multi-lookup". When called, it should interpret the last argument as the file path for the file to which results will be written. All proceeding arguments should be interpreted as input files containing hostnames in the aforementioned format.
 
-An example call involving three input files might look like:
+An example call involving five input files might look like:
 ```
-go run multi-lookup.go input/names1.txt input/names2.txt input/names3.txt input/names4.txt input/names5.txt results.txt 
+cargo run ../input/names1.txt ../input/names2.txt ../input/names3.txt ../input/names4.txt ../input/names5.txt results.txt 
 ```
 
 ### Limits
@@ -80,10 +81,10 @@ If you would like to use additional external libraries, you must clear it with m
 ## What You Must Provide
 To receive full credit, you must submit the following items to Turnin by the due date.
 
-* **multi-lookup.go**: Your program, conforming to the above requirements
+* **multi-lookup.tar.gz**: Your cargo project folder in a tar.gz file, conforming to the above requirements
 
 ## Extra Credit
-There are a few options for receiving extra credit on this assignment. Completion of each of the following items will gain you 5 points of extra credit per item. If you alter any files other than *multi-lookup.go* to accomplish the extra credit make sure you submit them as part of your assignment by taring up your whole project directory as a tar.gz file and submit to the extra credit option on Turnin. Make sure you turn in your original function project prior to attempting any of the extra credit.
+There are a few options for receiving extra credit on this assignment. Completion of each of the following items will gain you 5 points of extra credit per item. If you alter any files other than *multi-lookup.rs* to accomplish the extra credit make sure you submit them as part of your assignment by taring up your whole project directory as a tar.gz file and submit to the extra credit option on Turnin. Make sure you turn in your original function project prior to attempting any of the extra credit.
 
 You should submit all the code in one file with a readme.md that lists off which extra credit you solved in the tar.gz or alternatively you should have one folder for each extra credit with the folder name representing the extra credit solved.
 
