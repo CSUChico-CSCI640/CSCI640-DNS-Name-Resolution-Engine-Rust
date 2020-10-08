@@ -69,12 +69,9 @@ All system and library calls should be checked for errors. If you encounter erro
 
 ## External Resources
 You may use the following libraries and code to complete this assignment, as well as anything you have written for this assignment:
-* bufio
-* fmt
-* log
-* net
-* os
-* sync
+
+* dns-lookup
+* std
 
 If you would like to use additional external libraries, you must clear it with me first. You will not be allowed to use pre-existing thread-safe queue or file i/o libraries since the point of this assignment is to teach you how to make non-thread-safe resources thread-safe.
 
